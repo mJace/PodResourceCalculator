@@ -54,7 +54,8 @@ func main() {
 				&[]interface{}{
 					p.Namespace,
 					p.Name,
-					p.Status.HostIP,
+					p.Spec.NodeName,
+					//p.Status.HostIP,
 					c.Name,
 					reqCpu.MilliValue(), reqCpu,
 					reqMem.Value(), reqMem,
